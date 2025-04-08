@@ -1,0 +1,50 @@
+.home {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .intro {
+    margin-bottom: 2rem;
+  }
+  
+  .intro h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    color: #444;
+    max-width: 700px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .filters button {
+    background: none;
+    border: 1px solid var(--gray);
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .filters button:hover,
+  .filters button.active {
+    background: #d5d5d5;
+    font-weight: 600;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
