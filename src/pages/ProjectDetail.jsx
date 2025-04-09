@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 import projects from '../data/projects';
 import './ProjectDetail.css';
 
@@ -20,7 +21,7 @@ function ProjectDetail() {
     <div className="project-detail">
       <h2>{project.title}</h2>
       {project.image && <img src={project.image} alt={project.title} className="detail-image" />}
-      <p>{project.content}</p>
+      <ReactMarkdown>{project.content}</ReactMarkdown>
       <Link to="/">← Back to Home</Link>
     </div>
   );

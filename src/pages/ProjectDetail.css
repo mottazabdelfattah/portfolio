@@ -35,3 +35,14 @@
   .project-detail a:hover {
     text-decoration: underline;
   }
+
+  .project-detail ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-detail li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
