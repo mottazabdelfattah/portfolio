@@ -1,48 +1,100 @@
 .project-detail {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-size: 1rem;
-    color: #1a1a1a;
-    line-height: 1.7;
-  }
-  
-  .project-detail h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .project-detail p {
-    margin-bottom: 1.5rem;
-    color: #333;
-  }
-  
-  .detail-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.5rem 0;
-    border-radius: 4px;
-    border: 1px solid #eaeaea;
-  }
-  
-  .project-detail a {
-    color: var(--accent, #000);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .project-detail a:hover {
-    text-decoration: underline;
-  }
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1rem;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
 
-  .project-detail ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
+.project-detail h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail p {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.detail-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+
+.project-detail a {
+  color: var(--accent, #000);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-detail a:hover {
+  text-decoration: underline;
+}
+
+.project-detail ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.project-detail ul ul,
+.project-detail ul ol {
+  padding-left: 1.25rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95em; /* slightly smaller */
+}
+
+.project-detail img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+
+.project-detail em {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail blockquote {
+  background-color: #f9f9f9;
+  border-left: 4px solid var(--accent, #000);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-style: normal;
+  color: #333;
+}
+
+.project-figure {
+    margin: 1.5rem 0 1rem;
+    text-align: left;
   }
   
-  .project-detail li {
+  .project-figure img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .project-figure figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    line-height: 1.6;
+    line-height: 1.4;
   }
-  
