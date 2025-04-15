@@ -1,52 +1,40 @@
-import projects from "../data/projects";
-import ProjectCard from "../components/ProjectCard";
+import About from "../components/About";
+import Projects from "../components/Projects";
+import Career from "../components/Career";
+import Contact from "../components/Contact";
 import "./Home.css";
 
-import { useState } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Home() {
-  const [filter, setFilter] = useState("all");
-  const filteredProjects = projects.filter(
-    (project) => filter === "all" || project.type.includes(filter)
-  );
+  
+  
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          const yOffset = -80; // for sticky header
+          const y =
+            el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }, 0);
+      }
+    }
+  }, [location]);
 
   return (
     <section className="home">
-      <div className="intro">
-        <h2>Researcher | Data Analyst & Visualization Specialist</h2>
-        <p>
-          My work blends user-centered research, exploratory data analysis, and
-          interactive visualizations to support decision-making and tool
-          development. I have led research-driven projects in applied and
-          exploratory contexts. I enjoy working across disciplines to explore,
-          test, and communicate ideas.
-        </p>
-      </div>
+      
 
-      <div className="filters">
-        {["all", "ux", "viz", "aec"].map((type) => (
-          <button
-            key={type}
-            onClick={() => setFilter(type)}
-            className={filter === type ? "active" : ""}
-          >
-            {
-              {
-                all: "All",
-                ux: "User Research",
-                viz: "Data Visualization",
-                aec: "AEC",
-              }[type]
-            }
-          </button>
-        ))}
-      </div>
-
-      <div className="projects">
-        {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      <About/>
+      <Projects/>
+      <Career />
+      <Contact />
     </section>
   );
 }

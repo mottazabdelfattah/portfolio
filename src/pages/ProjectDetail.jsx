@@ -46,7 +46,7 @@ function ProjectDetail() {
       >
         {project.content}
       </ReactMarkdown>
-      <Link to="/">← Back to Home</Link>
+      <Link to="/#projects">← Back to Projects</Link>
     </div>
   );
 }

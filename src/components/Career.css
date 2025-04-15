@@ -1,0 +1,31 @@
+
+.career-block,
+.education-block {
+  margin-bottom: 2rem;
+}
+
+.career-block h4,
+.education-block h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.career-block ul,
+.education-block ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.career-block li,
+.education-block li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.career-block strong,
+.education-block strong {
+  color: var(--primary);
+  font-weight: 600;
+}
+
