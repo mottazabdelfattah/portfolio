@@ -6,7 +6,7 @@ function Header() {
     <header className="site-header">
       <div className="container">
         <h1 className="logo">
-          <Link to="/">Your Name / Portfolio</Link>
+          <Link to="/">Moataz Abdelaal / Portfolio</Link>
         </h1>
         <nav>
           <Link to="/#about" className="nav-link">About</Link>

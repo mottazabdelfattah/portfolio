@@ -13,7 +13,7 @@ function Home() {
   return (
     <section className="home">
       <div className="intro">
-        <h2>My Title</h2>
+        <h2>Researcher | Data Analyst & Visualization Specialist</h2>
         <p>
           My work blends user-centered research, exploratory data analysis, and
           interactive visualizations to support decision-making and tool
@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       <div className="filters">
-        {["all", "ux", "viz", "other"].map((type) => (
+        {["all", "ux", "viz", "aec"].map((type) => (
           <button
             key={type}
             onClick={() => setFilter(type)}
@@ -33,9 +33,9 @@ function Home() {
             {
               {
                 all: "All",
-                ux: "UX Research",
+                ux: "User Research",
                 viz: "Data Visualization",
-                other: "Other",
+                aec: "AEC",
               }[type]
             }
           </button>
