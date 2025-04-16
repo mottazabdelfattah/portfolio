@@ -108,7 +108,7 @@ This project sharpened my skills in remote study design, visual stimulus develop
     📄 Read Full Article
   </a>
 </p>
-`,image:"/portfolio//assets/images/mturk.png"},{id:"architect-lab",title:"Qualitative Study with Architects",type:["ux","aec"],summary:"Evaluating design decisions in a visualization tool for architects.",content:`> **TL;DR**  
+`,image:"/portfolio//assets/images/mturk.png",caption:"A behind-the-scenes look at a participant engaging with one task during the study. Photo © 2022 by Christoph Müller, featuring a consenting participant."},{id:"architect-lab",title:"Qualitative Study with Architects",type:["ux","aec"],summary:"Evaluating design decisions in a visualization tool for architects.",content:`> **TL;DR**  
 > Studied how projection and visualization methods affect design exploration. Star Coordinates was preferred; continuous maps encouraged open exploration, while discrete maps supported detailed analysis. Results suggest value in user-adaptive visualization tools.
       
 ### Summary  
@@ -173,7 +173,7 @@ This was my first hands-on experience conducting a creativity-focused research w
     📄 Read More
   </a>
 </p>
-`,image:"/portfolio//assets/images/workshop2.png",caption:"Sticky notes collected from the workshop."},{id:"literature-review",title:"Thematic Analysis",type:["ux"],summary:"Thematic coding of visualization literature on scalability.",content:`> **TL;DR**  
+`,image:"/portfolio//assets/images/workshop2.png",caption:"Examples of sticky notes collected from the workshop."},{id:"literature-review",title:"Thematic Analysis",type:["ux"],summary:"Thematic coding of visualization literature on scalability.",content:`> **TL;DR**  
 > Contributed to a large-scale literature review by thematically coding 127 visualization papers to analyze how scalability is defined and justified. The project highlighted inconsistencies in terminology and the need for shared frameworks across visualization subfields.
 
 ### Summary  
@@ -303,7 +303,7 @@ This project reinforced the importance of designing within the tools and visual 
     📄 Read Full Article
   </a>
 </p>
-`,image:"/portfolio//assets/images/fitness.png",caption:"An interactive user interface for exploring for exploring fitness landscapes in architectural design optimization."},{id:"vis-future-aec",title:"Visualization for the Future of AEC",type:["aec"],summary:"A perspective article on visualization's role in shaping AEC’s future.",content:`> **TL;DR**  
+`,image:"/portfolio//assets/images/fitness.png",caption:"A screenshot of the interactive user interface for exploring fitness landscapes in architectural design optimization. Visual polish and annotations by Kuno Kurzhals."},{id:"vis-future-aec",title:"Visualization for the Future of AEC",type:["aec"],summary:"A perspective article on visualization's role in shaping AEC’s future.",content:`> **TL;DR**  
 > Co-authored a perspective article on how visualization and AR technologies can support the digital transformation of the architecture, engineering, and construction (AEC) industry. The piece outlines domain challenges and identifies visualization opportunities across design, fabrication, and construction workflows.
 
 ### Summary  
