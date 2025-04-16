@@ -38,7 +38,11 @@ I led a quantitative user study comparing three network visualization techniques
 ### Reflection  
 This project sharpened my skills in remote study design, visual stimulus development, and translating quantitative findings into actionable design recommendations. If repeated, I’d combine quantitative metrics with qualitative follow-ups to better understand users’ reasoning during task performance.
 
-Read more → [Project Report](https://ieeexplore.ieee.org/document/9908291)
+<p class="project-actions">
+  <a href="https://ieeexplore.ieee.org/document/9908291" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+</p>
 `,
 
     image: `${import.meta.env.BASE_URL}/assets/images/mturk.png`,
@@ -74,7 +78,7 @@ I led a qualitative lab study to evaluate how different visualization techniques
 - **Continuous maps** supported open-ended exploration, while **discrete maps** facilitated detailed analysis and comparison  
 - Participants exhibited three primary navigation strategies: **axis sweeping** (often with Star Coordinates), **random exploration** (frequent with UMAP), and **systematic scanning** (more common with discrete maps)  
 
-![Navigation Strategies](${import.meta.env.BASE_URL}/assets/images/nav_strategy.png)  *The heatmaps of the mouse trajectories reveal three navigation strategies followed by the participants.*
+
 
 ### Implications  
 This study highlights the need for **user-adaptive visual analytics tools** — systems that tailor interaction based on user traits such as expertise, visualization literacy, and cognitive preferences. Participants with lower familiarity or confidence, especially with UMAP, showed signs of frustration and disengagement. Future systems should aim to reduce cognitive load through intuitive adaptation while maintaining transparency and user control. Balancing adaptability with user trust remains a complex but critical design challenge.
@@ -82,7 +86,11 @@ This study highlights the need for **user-adaptive visual analytics tools** — 
 ### Reflection  
 While the small sample size limited the generalizability of our findings, conducting in-person evaluations with domain experts provided unique value. The lab setting enabled close observation of user strategies, detailed feedback, and rich think-aloud commentary — insights difficult to achieve through crowd-sourced studies. In future work, I would combine this in-depth qualitative approach with larger-scale, quantitative studies to validate and expand on the observed patterns.
 
-Read more → [Project Report](https://link.springer.com/article/10.1007/s00371-024-03491-3)
+<p class="project-actions">
+  <a href="https://link.springer.com/article/10.1007/s00371-024-03491-3" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+</p>
 `,
     image: `${import.meta.env.BASE_URL}/assets/images/archiect_user_study_diagram.png`,
     caption: `A visual summary of the study design, highlighting procedure, tasks, independent variables, and collected measures.`
@@ -116,7 +124,11 @@ The **visualization analogy** activity was especially effective at prompting par
 ### Reflection  
 This was my first hands-on experience conducting a creativity-focused research workshop. It gave me a deeper understanding of how to structure open-ended, participatory sessions and how letting participants lead the conversation and resisting the urge to steer the discussion are essential for uncovering authentic insights.
 
-Read more → [A Framework for Creative Visualization-Opportunities Workshops](https://ieeexplore.ieee.org/abstract/document/8440830/)
+<p class="project-actions">
+  <a href="https://ieeexplore.ieee.org/abstract/document/8440830/" target="_blank" class="contact-button">
+    📄 Read More
+  </a>
+</p>
 `,
     image: `${import.meta.env.BASE_URL}/assets/images/workshop2.png`,
     caption: `Sticky notes collected from the workshop.`
@@ -154,7 +166,11 @@ Our work showed the need for shared frameworks and terminology that help researc
 ### Reflection  
 This project sharpened my skills in **thematic coding**. It also reminded me how important it is to be **precise and evidence-based** when making claims about concepts like scalability, both in research and product contexts.
 
-Read more → [Project Report](https://ieeexplore.ieee.org/document/10003102/)
+<p class="project-actions">
+  <a href="https://ieeexplore.ieee.org/document/10003102/" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+</p>
 `,
     image: `${import.meta.env.BASE_URL}/assets/images/thematic.png`,
   },
@@ -226,9 +242,14 @@ Working closely with domain experts was essential to shaping the tool's function
 ### Reflection  
 This project reinforced the importance of **designing with—not just for—domain experts**. It also deepened my experience with D3.js.
 
-Explore the tool → [Live Prototype](https://archstakeholders.github.io/).
-
-Read more → [Project Report](https://www.mdpi.com/2075-5309/13/9/2287)
+<p class="project-actions">
+  <a href="https://www.mdpi.com/2075-5309/13/9/2287" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+  <a href="https://archstakeholders.github.io/" target="_blank" class="contact-button">
+    🧭 Live Prototype
+  </a>
+</p>
 `
   },
 
@@ -270,7 +291,11 @@ The expert was able to confirm existing hypotheses about the design space and al
 ### Reflection  
 This project reinforced the importance of designing within the tools and visual language familiar to domain experts. Integration with Rhino/Grasshopper was essential for adoption. Likewise, architects ultimately want to “see” the 3D representation of the designs. For exploration tools to be adopted, they must strike a balance between data abstraction and 3D design representation.
 
-Read more → [Project Report](https://link.springer.com/article/10.1007/s00371-024-03491-3)
+<p class="project-actions">
+  <a href="https://link.springer.com/article/10.1007/s00371-024-03491-3" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+</p>
 `,
 image: `${import.meta.env.BASE_URL}/assets/images/fitness.png`,
     caption: `An interactive user interface for exploring for exploring fitness landscapes in architectural design optimization.`
@@ -304,7 +329,11 @@ The article advocates for **human-in-the-loop** solutions that reflect the conte
 ### Reflection  
 Writing this article helped me step back from individual research projects and think more broadly about how design, engineering, and digital technologies intersect at a systems level. It also allowed me to reflect on the interplay between the **visualization** and **AEC** domains—and what these two design-driven disciplines can learn from one another.
 
-Read more → [Full Article]( https://ieeexplore.ieee.org/abstract/document/9709159)
+<p class="project-actions">
+  <a href="https://ieeexplore.ieee.org/abstract/document/9709159" target="_blank" class="contact-button">
+    📄 Read Full Article
+  </a>
+</p>
 `
   }
 ];

@@ -4,6 +4,7 @@ import projects from "../data/projects";
 import "./ProjectDetail.css";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import rehypeRaw from "rehype-raw";
 
 function ProjectDetail() {
   const { id } = useParams();
@@ -34,7 +35,7 @@ function ProjectDetail() {
           {project.caption && <figcaption>{project.caption}</figcaption>}
         </figure>
       )}
-      <ReactMarkdown
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}
         components={{
           img: ({ node, ...props }) => (
             <Zoom>
@@ -46,7 +47,8 @@ function ProjectDetail() {
       >
         {project.content}
       </ReactMarkdown>
-      <Link to="/#projects">← Back to Projects</Link>
+      
+      <Link to="/#projects" className="back-link">← Back to Projects</Link>
     </div>
   );
 }

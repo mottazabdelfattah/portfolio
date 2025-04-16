@@ -26,13 +26,13 @@
   border: 1px solid #eaeaea;
 }
 
-.project-detail a {
+.back-link {
   color: var(--accent, #000);
   text-decoration: none;
   font-weight: 500;
 }
 
-.project-detail a:hover {
+.back-link:hover {
   text-decoration: underline;
 }
 
@@ -97,4 +97,11 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     line-height: 1.4;
+  }
+
+  .project-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }

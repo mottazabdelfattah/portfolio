@@ -50,26 +50,10 @@
     
   }
   
-  .contact-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.25rem 0.25rem;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: white;
-    background-color: var(--primary);
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background 0.2s ease;
-    min-width: 30px;
-  }
+  
   
   .contact-button i {
     font-size: 1.2rem;
   }
   
-  .contact-button:hover {
-    background-color: black;
-  }
+  

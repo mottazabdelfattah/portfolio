@@ -8,7 +8,7 @@ function Career() {
         <h4>Career</h4>
         <ul>
           <li>
-            <strong>Freelance Researcher & Visualization Specialist</strong> –
+            <strong>Freelancer</strong> –
             Remote, Germany
             <br />
             <em>Oct 2024 – Present</em>

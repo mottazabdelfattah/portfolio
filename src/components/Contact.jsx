@@ -15,13 +15,13 @@ function Contact() {
   return (
     <div id="contact" className="contact section-divider">
       <h3 className="section-title">Contact</h3>
-      <p>
+      <div>
         You can reach me at <p id="email"></p>
-      </p>
+      </div>
 
       <div className="contact-buttons">
         <a
-          href="/cv.pdf"
+          href="./assets/docs/abdelaal_resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="contact-button"

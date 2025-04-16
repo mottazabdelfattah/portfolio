@@ -4,7 +4,9 @@
   padding: 2rem;
 }
 
-section > div {
+.home > #projects,
+.home > #career,
+.home > #contact {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,21 +14,6 @@ section > div {
   margin-top: 0;
   padding: 4rem 0;
 }
-
-/* .intro {
-  margin-bottom: 2rem;
-}
-
-.intro h2 {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  font-size: 1rem;
-  color: #444;
-  max-width: 700px;
-} */
 
 
 .section-title {
@@ -48,3 +35,33 @@ section > div {
   background-color: var(--accent, #000);
   border-radius: 2px;
 }
+
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  min-width: 30px;
+}
+
+.contact-button:hover {
+  background-color: black;
+}
+
+/* .contact-button.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.contact-button.secondary:hover {
+  background-color: #ddd;
+} */
