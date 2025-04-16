@@ -46,6 +46,7 @@ This project sharpened my skills in remote study design, visual stimulus develop
 `,
 
     image: `${import.meta.env.BASE_URL}/assets/images/mturk.png`,
+    caption: `A behind-the-scenes look at a participant engaging with one task during the study. Photo © 2022 by Christoph Müller, featuring a consenting participant.`
   },
   {
     id: "architect-lab",
@@ -131,7 +132,7 @@ This was my first hands-on experience conducting a creativity-focused research w
 </p>
 `,
     image: `${import.meta.env.BASE_URL}/assets/images/workshop2.png`,
-    caption: `Sticky notes collected from the workshop.`
+    caption: `Examples of sticky notes collected from the workshop.`
   },
   {
     id: "literature-review",
@@ -298,7 +299,7 @@ This project reinforced the importance of designing within the tools and visual 
 </p>
 `,
 image: `${import.meta.env.BASE_URL}/assets/images/fitness.png`,
-    caption: `An interactive user interface for exploring for exploring fitness landscapes in architectural design optimization.`
+    caption: `A screenshot of the interactive user interface for exploring fitness landscapes in architectural design optimization. Visual polish and annotations by Kuno Kurzhals.`
   },
 
   {
