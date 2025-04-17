@@ -1,12 +1,20 @@
 import { useState } from "react";
 import "./SkillsRadial.css";
 
-function SkillsRadial({ icon, title, items }) {
-  const [open, setOpen] = useState(false);
+function SkillsRadial() {
+  const [showAll, setShowAll] = useState(false);
 
   return (
-    <div className="skills-radial">
-      <h3 className="radial-title">Skills</h3>
+    <div
+      className={`skills-radial ${showAll ? "show-all" : ""}`}
+    >
+      <h3
+        className="radial-title"
+        onMouseEnter={() => setShowAll(true)}
+        onMouseLeave={() => setShowAll(false)}
+      >
+        Skills
+      </h3>
 
       <div className="bubble user-research">
         <div className="bubble-title">
