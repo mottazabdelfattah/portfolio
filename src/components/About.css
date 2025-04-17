@@ -1,36 +1,3 @@
-.skills {
-  margin-top: 1.5rem;
-}
-
-.skills h3 {
-  margin-bottom: 0.75rem;
-}
-
-.skills ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.skills li {
-  display: grid;
-  grid-template-columns: 24px 1fr;
-  align-items: flex-start;
-  gap: 0.5rem;
-  margin-bottom: 0.2rem;
-  font-size: 0.85rem;
-}
-
-.skills li strong {
-  font-weight: 600;
-}
-
-.skills i {
-  color: var(--primary);
-  font-size: 0.95rem;
-  padding-top: 0.15rem;
-}
-
-
 .about-container {
     display: flex;
     justify-content: space-between;

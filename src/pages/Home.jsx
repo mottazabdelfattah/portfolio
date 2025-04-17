@@ -8,9 +8,6 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function Home() {
-  
-  
-
   const location = useLocation();
 
   useEffect(() => {
@@ -29,10 +26,8 @@ function Home() {
 
   return (
     <section className="home">
-      
-
-      <About/>
-      <Projects/>
+      <About />
+      <Projects />
       <Career />
       <Contact />
     </section>

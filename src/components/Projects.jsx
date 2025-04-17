@@ -4,7 +4,7 @@ import "./Projects.css";
 import { useState } from "react";
 
 function Projects() {
-    const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("all");
   const filteredProjects = projects.filter(
     (project) => filter === "all" || project.type.includes(filter)
   );

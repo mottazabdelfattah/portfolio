@@ -3,8 +3,7 @@ const projects = [
     id: "mturk-study",
     title: "Quantitative Visualization Study",
     type: ["ux"],
-    summary:
-      "Quantitative evaluation of static network representations.",
+    summary: "Quantitative evaluation of static network representations.",
     content: `> **TL;DR**  
 > Conducted a quantitative study via MTurk to compare three static network representations: Node-Link diagrams (NL), Adjacency Matrices (AM), and Bipartite layouts (BP). AM and BP supported better high-level comprehension, while NL helped with cluster detection. Results inform layout choices based on task type and user goals.
     
@@ -46,7 +45,7 @@ This project sharpened my skills in remote study design, visual stimulus develop
 `,
 
     image: `${import.meta.env.BASE_URL}/assets/images/mturk.png`,
-    caption: `A behind-the-scenes look at a participant engaging with one task during the study. Photo © 2022 by Christoph Müller, featuring a consenting participant.`
+    caption: `A behind-the-scenes look at a participant engaging with one task during the study. Photo © 2022 by Christoph Müller, featuring a consenting participant.`,
   },
   {
     id: "architect-lab",
@@ -54,8 +53,7 @@ This project sharpened my skills in remote study design, visual stimulus develop
     type: ["ux", "aec"],
     summary:
       "Evaluating design decisions in a visualization tool for architects.",
-    content:
-      `> **TL;DR**  
+    content: `> **TL;DR**  
 > Studied how projection and visualization methods affect design exploration. Star Coordinates was preferred; continuous maps encouraged open exploration, while discrete maps supported detailed analysis. Results suggest value in user-adaptive visualization tools.
       
 ### Summary  
@@ -93,16 +91,17 @@ While the small sample size limited the generalizability of our findings, conduc
   </a>
 </p>
 `,
-    image: `${import.meta.env.BASE_URL}/assets/images/archiect_user_study_diagram.png`,
-    caption: `A visual summary of the study design, highlighting procedure, tasks, independent variables, and collected measures.`
+    image: `${
+      import.meta.env.BASE_URL
+    }/assets/images/archiect_user_study_diagram.png`,
+    caption: `A visual summary of the study design, highlighting procedure, tasks, independent variables, and collected measures.`,
   },
   {
     id: "creativity-workshops",
     title: "Creativity Workshops",
-    type: ["ux","aec"],
+    type: ["ux", "aec"],
     summary: "Exploring early-stage design through participatory workshops.",
-    content:
-      `> **TL;DR**  
+    content: `> **TL;DR**  
 > Facilitated a creativity workshop with architects to explore their current workflows and identify opportunities for visualization. Used structured activities—including wishful thinking, brainstorming, and visual analogies—to elicit design needs and data-driven tool ideas.
 
 ### Summary  
@@ -132,16 +131,14 @@ This was my first hands-on experience conducting a creativity-focused research w
 </p>
 `,
     image: `${import.meta.env.BASE_URL}/assets/images/workshop2.png`,
-    caption: `Examples of sticky notes collected from the workshop.`
+    caption: `Examples of sticky notes collected from the workshop.`,
   },
   {
     id: "literature-review",
     title: "Thematic Analysis",
     type: ["ux"],
-    summary:
-      "Thematic coding of visualization literature on scalability.",
-    content:
-      `> **TL;DR**  
+    summary: "Thematic coding of visualization literature on scalability.",
+    content: `> **TL;DR**  
 > Contributed to a large-scale literature review by thematically coding 127 visualization papers to analyze how scalability is defined and justified. The project highlighted inconsistencies in terminology and the need for shared frameworks across visualization subfields.
 
 ### Summary  
@@ -179,8 +176,7 @@ This project sharpened my skills in **thematic coding**. It also reminded me how
     id: "dynamic-network",
     title: "Dynamic Network Visualization",
     type: ["viz"],
-    summary:
-      "Scalable layouts for visualizing dynamic networks.",
+    summary: "Scalable layouts for visualizing dynamic networks.",
     content: `> **TL;DR**  
 > Designed and evaluated two scalable layout techniques for dynamic networks based on bipartite graph layouts. The layouts support temporal pattern recognition while minimizing overdraw, and were tested through parameter studies and real-world datasets.
 
@@ -209,7 +205,7 @@ Although the focus was on layout design, this project highlighted how **data-lay
 
 ### Future Work  
 Next steps include developing a **quantitative user study** to validate the findings from our work, as well as building a **graph generation model** that integrates temporal and structural features.
-`
+`,
   },
   {
     id: "timber-stakeholders",
@@ -251,7 +247,7 @@ This project reinforced the importance of **designing with—not just for—doma
     🧭 Live Prototype
   </a>
 </p>
-`
+`,
   },
 
   {
@@ -298,8 +294,8 @@ This project reinforced the importance of designing within the tools and visual 
   </a>
 </p>
 `,
-image: `${import.meta.env.BASE_URL}/assets/images/fitness.png`,
-    caption: `A screenshot of the interactive user interface for exploring fitness landscapes in architectural design optimization. Visual polish and annotations by Kuno Kurzhals.`
+    image: `${import.meta.env.BASE_URL}/assets/images/fitness.png`,
+    caption: `A screenshot of the interactive user interface for exploring fitness landscapes in architectural design optimization. Visual polish and annotations by Kuno Kurzhals.`,
   },
 
   {
@@ -335,8 +331,8 @@ Writing this article helped me step back from individual research projects and t
     📄 Read Full Article
   </a>
 </p>
-`
-  }
+`,
+  },
 ];
 
 export default projects;

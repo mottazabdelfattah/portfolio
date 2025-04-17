@@ -4,9 +4,10 @@
   padding: 2rem;
 }
 
-.home > #projects,
+/* .home > #projects,
 .home > #career,
-.home > #contact {
+.home > #contact  */
+section > div {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
