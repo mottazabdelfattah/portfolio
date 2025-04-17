@@ -21,10 +21,10 @@ function SkillsRadial() {
           <i className="fas fa-users"></i>User Research
         </div>
         <ul>
-          <li>Usability Testing</li>
-          <li>Interviews</li>
-          <li>Surveys</li>
-          <li>Workshops</li>
+          <li><span>Usability Testing</span></li>
+          <li><span>Interviews</span></li>
+          <li><span>Surveys</span></li>
+          <li><span>Workshops</span></li>
         </ul>
       </div>
 
@@ -33,11 +33,11 @@ function SkillsRadial() {
           <i className="fas fa-chart-line"></i>Data Analysis
         </div>
         <ul>
-          <li>EDA</li>
-          <li>Stats</li>
-          <li>Python</li>
-          <li>R</li>
-          <li>Excel</li>
+          <li><span>EDA</span></li>
+          <li><span>Stats</span></li>
+          <li><span>Python</span></li>
+          <li><span>R</span></li>
+          <li><span>Excel</span></li>
         </ul>
       </div>
 
@@ -46,10 +46,10 @@ function SkillsRadial() {
           <i className="fas fa-eye"></i>Visualization
         </div>
         <ul>
-          <li>D3.js</li>
-          <li>Chart.js</li>
-          <li>Power BI</li>
-          <li>SciChart</li>
+          <li><span>D3.js</span></li>
+          <li><span>Chart.js</span></li>
+          <li><span>Power BI</span></li>
+          <li><span>SciChart</span></li>
         </ul>
       </div>
 
@@ -58,18 +58,18 @@ function SkillsRadial() {
           <i className="fas fa-code"></i>Technical
         </div>
         <ul>
-          <li>React</li>
-          <li>Angular</li>
-          <li>.NET</li>
-          <li>WPF</li>
-          <li>C#</li>
-          <li>Java</li>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>JS</li>
-          <li>CSS</li>
-          <li>SQL</li>
-          <li>MySQL</li>
+          <li><span>React</span></li>
+          <li><span>Angular</span></li>
+          <li><span>.NET</span></li>
+          <li><span>WPF</span></li>
+          <li><span>C#</span></li>
+          <li><span>Java</span></li>
+          <li><span>PHP</span></li>
+          <li><span>HTML</span></li>
+          <li><span>JS</span></li>
+          <li><span>CSS</span></li>
+          <li><span>SQL</span></li>
+          <li><span>MySQL</span></li>
         </ul>
       </div>
 
@@ -78,10 +78,10 @@ function SkillsRadial() {
           <i className="fas fa-graduation-cap"></i>Academic
         </div>
         <ul>
-          <li>Manuscript-writing</li>
-          <li>Peer-reviewing</li>
-          <li>Tutoring</li>
-          <li>Supervision</li>
+          <li><span>Manuscript Writing</span></li>
+          <li><span>Peer-reviewing</span></li>
+          <li><span>Tutoring</span></li>
+          <li><span>Supervision</span></li>
         </ul>
       </div>
     </div>
