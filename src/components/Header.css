@@ -52,6 +52,10 @@ nav {
   color: black;
 }
 
+.nav-link.active {
+  font-weight: 600;
+  color: black;
+} 
 .nav-link.active::after {
   content: "";
   position: absolute;
