@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageProvider";
 import ReactMarkdown from "react-markdown";
 import projects from "../data/projects";
 
@@ -8,64 +9,73 @@ import "react-medium-image-zoom/dist/styles.css";
 import rehypeRaw from "rehype-raw";
 import SectionBlock from "../components/SectionBlock";
 import MiniNav from "../components/MiniNav";
+import uiText from "../data/uiText";
 
 function ProjectDetail() {
   const { id } = useParams();
+  const { language } = useLanguage(); 
+  const text = uiText[language].projectDetails;
   const project = projects.find((p) => p.id === id);
 
   if (!project) {
     return (
       <div className="project-detail">
-        <h2>Project not found</h2>
-        <p>Sorry, we couldn’t find this project.</p>
-        <Link to="/">← Back to Home</Link>
+        <h2>{text.projectNotFound}</h2>
+        <p>{text.projectNotFoundText}</p>
+        <Link to="/">{text.backToHome}</Link>
       </div>
     );
   }
 
   return (
     <div className="project-detail">
-      <h2>{project.title}</h2>
+      <h2>{project.title[language]}</h2>
+
       {project.image && (
         <figure className="project-figure">
           <Zoom>
             <img
               src={project.image}
-              alt={project.title}
+              alt={project.title[language]}
               className="detail-image"
             />
           </Zoom>
-          {project.caption && <figcaption>{project.caption}</figcaption>}
+          {project.caption && <figcaption>{project.caption[language]}</figcaption>}
         </figure>
       )}
+
       {project.tldr && (
         <div className="tldr-block">
           <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-            {project.tldr}
+            {project.tldr[language]}
           </ReactMarkdown>
         </div>
       )}
-      {/* 🔀 Structured Sections: render if available */}
-      {<MiniNav sectionCount={project.sections?.length-1 || 0} />}
+
+      {project.sections && (
+        <MiniNav sectionCount={project.sections.length - 1} />
+      )}
+
       {project.sections ? (
         project.sections.map((sec, idx) => {
-          // Special handling for the "Read More" section
-          if (sec.title === "Read More") {
+          const title = sec.title[language];
+          const content = sec.content[language];
+
+          if (title === "Read More" || title === "Mehr erfahren") {
             return (
               <div key={idx} className="read-more">
                 <ReactMarkdown rehypePlugins={[rehypeRaw]}>
-                  {sec.content}
+                  {content}
                 </ReactMarkdown>
               </div>
             );
           }
-        
-          // Default: use SectionBlock
+
           return (
             <div id={`section-${idx}`} key={idx}>
               <SectionBlock
-                title={sec.title}
-                content={sec.content}
+                title={title}
+                content={content}
                 media={sec.media}
                 mediaAlt={sec.mediaAlt}
                 mediaSide={sec.mediaSide}
@@ -76,7 +86,7 @@ function ProjectDetail() {
           );
         })
       ) : (
-        // 🧾 Fallback: render original markdown content
+        // fallback if no structured sections
         <ReactMarkdown
           rehypePlugins={[rehypeRaw]}
           components={{
@@ -93,7 +103,7 @@ function ProjectDetail() {
       )}
 
       <Link to="/#projects" className="back-link">
-        ← Back to Projects
+        {text.backToProjects}
       </Link>
     </div>
   );

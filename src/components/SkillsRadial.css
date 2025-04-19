@@ -97,11 +97,11 @@
 }
 
 /* Smaller radius positions */
-.user-research {
+.userResearch {
   top: calc(50% - 155px);
   left: 50%;
 }
-.data-analysis {
+.dataAnalysis {
   top: calc(50% - 40px);
   left: calc(50% + 120px);
 }

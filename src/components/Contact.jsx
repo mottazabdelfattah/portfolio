@@ -1,8 +1,14 @@
 import "./Contact.css";
 
 import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageProvider";
+import uiText from "../data/uiText";
+
 function Contact() {
+  const { language } = useLanguage();
+  const text = uiText[language].contactSection;
   useEffect(() => {
+    
     const user = "mottazabdelfattah";
     const domain = "gmail.com";
     const element = document.getElementById("email");
@@ -14,9 +20,9 @@ function Contact() {
 
   return (
     <div id="contact" className="contact section-divider">
-      <h3 className="section-title">Contact</h3>
+      <h3 className="section-title">{text.title}</h3>
       <div>
-        You can reach me at <p id="email"></p>
+        {text.intro} <p id="email"></p>
       </div>
 
       <div className="contact-buttons">
@@ -26,7 +32,7 @@ function Contact() {
           rel="noopener noreferrer"
           className="contact-button"
         >
-          CV
+          {text.cvLabel}
         </a>
 
         <a

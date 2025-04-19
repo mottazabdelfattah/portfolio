@@ -1,60 +1,95 @@
 .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-    border-bottom: 1px solid #eaeaea;
-    width: 100%;
-  }
-  
-  .site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    max-width: 1024px;
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-light);
-    text-decoration: none;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-link,
+.lang-toggle {
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+main.container {
+  padding-top: 6rem; /* to account for fixed header */
+}
+
+.lang-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;       /* smaller than default */
+  color: #888;              /* more subtle gray */
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.lang-toggle:hover {
+  color: #333;
+}
+
+
+@media (max-width: 600px) {
   nav {
-    display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
   }
-  
-  .nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.2s;
-    position: relative;
+
+  .lang-toggle {
+    margin-left: auto;
   }
-  
-  .nav-link:hover {
-    color: black;
-  }
-  
-  .nav-link.active::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-    width: 100%;
-    background-color: black;
-  }
-  
-  main.container {
-    padding-top: 6rem; /* to account for fixed header */
-  }
-  
+}

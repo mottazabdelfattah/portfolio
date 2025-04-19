@@ -2,16 +2,21 @@ import projects from "../data/projects";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 import { useState } from "react";
+import { useLanguage } from "../context/LanguageProvider";
+import uiText from "../data/uiText";
 
 function Projects() {
   const [filter, setFilter] = useState("all");
+  const { language } = useLanguage();
+  const text = uiText[language].projectsSection;
   const filteredProjects = projects.filter(
     (project) => filter === "all" || project.type.includes(filter)
   );
 
   return (
     <div id="projects">
-      <h2 className="section-title">Selected Projects</h2>
+      <h2 className="section-title">{text.title}</h2>
+
       <div className="filters">
         {["all", "ux", "viz", "aec"].map((type) => (
           <button
@@ -19,14 +24,7 @@ function Projects() {
             onClick={() => setFilter(type)}
             className={filter === type ? "active" : ""}
           >
-            {
-              {
-                all: "All",
-                ux: "User Research",
-                viz: "Data Visualization",
-                aec: "AEC",
-              }[type]
-            }
+            {text.filters[type]}
           </button>
         ))}
       </div>
