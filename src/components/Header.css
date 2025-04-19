@@ -91,9 +91,14 @@ main.container {
   nav {
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: nowrap; /* force one-line layout */
   }
 
   .lang-toggle {
     margin-left: auto;
+    font-size: 0.7rem;
+    margin-left: 0; /* reset any offset */
+    flex-shrink: 0;  /* prevent it from shrinking and wrapping */
   }
+  
 }
