@@ -7,7 +7,7 @@ import "./Home.css";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-function Home() {
+function Home({ setActiveSection }) {
   const location = useLocation();
 
   useEffect(() => {
@@ -24,10 +24,35 @@ function Home() {
     }
   }, [location]);
 
+  useEffect(() => {
+    const sections = ["about", "projects", "career", "contact"];
+
+    const handleScroll = () => {
+      const scrollY = window.scrollY + 500;
+
+      for (let id of sections) {
+        const el = document.getElementById(id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollY >= top && scrollY < top + height) {
+            setActiveSection(id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // init
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [setActiveSection]);
+
   return (
     <section className="home">
       <About />
-      <Projects />
+      <Projects setActiveSection={setActiveSection}/>
       <Career />
       <Contact />
     </section>

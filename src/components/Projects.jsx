@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useLanguage } from "../context/LanguageProvider";
 import uiText from "../data/uiText";
 
-function Projects() {
+function Projects({ setActiveSection }) {
   const [filter, setFilter] = useState("all");
   const { language } = useLanguage();
   const text = uiText[language].projectsSection;
@@ -31,7 +31,11 @@ function Projects() {
 
       <div className="projects">
         {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard
+            key={project.id}
+            project={project}
+            onClick={() => setActiveSection("projects")}
+          />
         ))}
       </div>
     </div>
