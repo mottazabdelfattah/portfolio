@@ -1,8 +1,8 @@
 import "./About.css";
 import { Typewriter } from "react-simple-typewriter";
-import SkillsRadial from "./SkillsRadial";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import SkillsRadial from "../visuals/SkillsRadial";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 
 function About() {
   const { language } = useLanguage();

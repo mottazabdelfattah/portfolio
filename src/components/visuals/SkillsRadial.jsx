@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SkillsRadial.css";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 
 function SkillsRadial() {
   const [showAll, setShowAll] = useState(false);

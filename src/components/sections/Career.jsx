@@ -1,6 +1,6 @@
 import "./Career.css";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 function Career() {
   const { language } = useLanguage();
   const text = uiText[language].careerSection;

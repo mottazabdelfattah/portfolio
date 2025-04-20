@@ -1,9 +1,9 @@
-import projects from "../data/projects";
+import projects from "../../data/projects";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css";
 import { useState } from "react";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 
 function Projects({ setActiveSection }) {
   const [filter, setFilter] = useState("all");

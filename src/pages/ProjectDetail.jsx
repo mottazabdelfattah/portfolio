@@ -7,8 +7,8 @@ import "./ProjectDetail.css";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import rehypeRaw from "rehype-raw";
-import SectionBlock from "../components/SectionBlock";
-import MiniNav from "../components/MiniNav";
+import SectionBlock from "../components/blocks/SectionBlock";
+import MiniNav from "../components/layout/MiniNav";
 import uiText from "../data/uiText";
 
 function ProjectDetail() {

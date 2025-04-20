@@ -1,7 +1,7 @@
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Career from "../components/Career";
-import Contact from "../components/Contact";
+import About from "../components/sections/About";
+import Projects from "../components/sections/Projects";
+import Career from "../components/sections/Career";
+import Contact from "../components/sections/Contact";
 import "./Home.css";
 
 import { useEffect } from "react";

@@ -1,8 +1,8 @@
 import "./Contact.css";
 
 import { useEffect } from "react";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 
 function Contact() {
   const { language } = useLanguage();

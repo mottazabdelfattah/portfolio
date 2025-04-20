@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./ProjectCard.css";
-import { useLanguage } from "../context/LanguageProvider";
+import { useLanguage } from "../../context/LanguageProvider";
 
 function ProjectCard({ project, onClick }) {
   const { language } = useLanguage();

@@ -1,8 +1,8 @@
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from "react-router-hash-link";
 import "./Header.css";
-import { useLanguage } from "../context/LanguageProvider";
-import uiText from "../data/uiText";
+import { useLanguage } from "../../context/LanguageProvider";
+import uiText from "../../data/uiText";
 
 function Header({activeSection}) {
   const { language, toggleLanguage } = useLanguage();
