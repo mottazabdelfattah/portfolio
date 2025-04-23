@@ -1,3 +1,6 @@
+import NetworkTaskRatings from "../components/visuals/NetworkTaskRatings";
+import StudyDiagram from "../components/visuals/StudyDiagram";
+
 const uiText = {
   en: {
     home: {
@@ -138,6 +141,29 @@ const uiText = {
       backToHome: "← Back to Home",
       backToProjects: "← Back to Projects",
     },
+    networkTaskRatings: {
+      layouts: {
+        "Node-Link": "Node-Link",
+        "Adjacency Matrix": "Adjacency Matrix",
+        "Bipartite": "Bipartite",
+      },
+      tasks: {
+        "Density Estimation": "Density Estimation",
+        "Cluster Detection": "Cluster Detection",
+        "Structural Overview": "Structural Overview",
+      },
+    },
+    accuracyChart: {
+      title: "Overall Accuracy",
+      caption:
+        "The width of the bars represents the means, and the error bars their 95% confidence intervals.",
+    },
+    studyDiagram:{
+      design: "Study Design",
+      parameters: "Network Parameters",
+      measures: "Measures",
+      tasks: "Tasks"
+    }
   },
   de: {
     home: {
@@ -278,6 +304,30 @@ const uiText = {
       backToHome: "← Zurück zur Startseite",
       backToProjects: "← Zurück zu den Projekten",
     },
+    networkTaskRatings: {
+      layouts: {
+        "Node-Link": "Knoten-Kanten-Diagramm",
+        "Adjacency Matrix": "Adjazenzmatrix",
+        "Bipartite": "Bipartite Darstellung",
+      },
+      tasks: {
+        "Density Estimation": "Dichteabschätzung",
+        "Cluster Detection": "Clusterdetektion",
+        "Structural Overview": "Strukturelle Übersicht",
+      },
+     
+    },
+    accuracyChart: {
+      title: "Gesamtgenauigkeit",
+      caption:
+        "Die Breite der Balken zeigt den Mittelwert, die Fehlerbalken die 95% Konfidenzintervalle.",
+    },
+    studyDiagram:{
+      design: "Studiendesign",
+      parameters: "Netzwerkparameter",
+      measures: "Messgrößen",
+      tasks: "Aufgaben"
+    }
   },
 };
 

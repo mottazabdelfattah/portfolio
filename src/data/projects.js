@@ -21,11 +21,11 @@ const projects = [
     tldr: {
       en: `
   > **TL;DR**  
-  > Conducted a quantitative study via MTurk to compare three static network representations: Node-Link diagrams (NL), Adjacency Matrices (AM), and Bipartite layouts (BP). AM and BP supported better high-level comprehension, while NL helped with cluster detection. Results inform layout choices based on task type and user goals.
+  > Conducted a quantitative study via MTurk to compare three static network representations: Node-Link diagrams ([[Component:InlineIcon type="NL"]]), Adjacency Matrices ([[Component:InlineIcon type="AM"]]), and Bipartite layouts ([[Component:InlineIcon type="BP"]]). [[Component:InlineIcon type="AM"]] and [[Component:InlineIcon type="BP"]] supported better high-level comprehension, while [[Component:InlineIcon type="NL"]] helped with cluster detection. Results inform layout choices based on task type and user goals.
       `,
       de: `
   > **Kurzfassung**  
-  > Durchführung einer quantitativen Studie über MTurk zum Vergleich von drei statischen Netzwerkdarstellungen: Node-Link-Diagramme (NL), Adjazenzmatrizen (AM) und bipartite Layouts (BP). AM und BP unterstützten ein besseres Gesamtverständnis, während NL bei der Clustererkennung hilfreich war. Die Ergebnisse geben Empfehlungen zur Wahl geeigneter Layouts je nach Aufgabentyp und Nutzerziel.
+  > Durchführung einer quantitativen Studie über MTurk zum Vergleich von drei statischen Netzwerkdarstellungen: Node-Link-Diagramme ([[Component:InlineIcon type="NL"]]), Adjazenzmatrizen ([[Component:InlineIcon type="AM"]]) und bipartite Layouts ([[Component:InlineIcon type="BP"]]). [[Component:InlineIcon type="AM"]] und [[Component:InlineIcon type="BP"]] unterstützten ein besseres Gesamtverständnis, während [[Component:InlineIcon type="NL"]] bei der Clustererkennung hilfreich war. Die Ergebnisse geben Empfehlungen zur Wahl geeigneter Layouts je nach Aufgabentyp und Nutzerziel.
       `,
     },
 
@@ -36,8 +36,8 @@ const projects = [
           de: "Zusammenfassung",
         },
         content: {
-          en: `I led a quantitative user study comparing three network visualization techniques — node-link diagrams (NL), adjacency matrices (AM), and bipartite layouts (BP) — with a focus on large networks and high-level overview tasks. The study was conducted using Amazon Mechanical Turk (MTurk) to achieve statistically significant results.`,
-          de: `Ich leitete eine quantitative Nutzerstudie, in der drei Visualisierungstechniken für Netzwerke verglichen wurden – Node-Link-Diagramme (NL), Adjazenzmatrizen (AM) und bipartite Layouts (BP) – mit Fokus auf große Netzwerke und Aufgaben auf Übersichtsebene. Die Studie wurde über Amazon Mechanical Turk (MTurk) durchgeführt, um statistisch signifikante Ergebnisse zu erzielen.`,
+          en: `I led a quantitative user study comparing three network visualization techniques — node-link diagrams ([[Component:InlineIcon type="NL"]]), adjacency matrices ([[Component:InlineIcon type="AM"]]), and bipartite layouts ([[Component:InlineIcon type="BP"]]) — with a focus on large networks and high-level overview tasks. The study was conducted using Amazon Mechanical Turk (MTurk) to achieve statistically significant results.`,
+          de: `Ich leitete eine quantitative Nutzerstudie, in der drei Visualisierungstechniken für Netzwerke verglichen wurden – Node-Link-Diagramme ([[Component:InlineIcon type="NL"]]), Adjazenzmatrizen ([[Component:InlineIcon type="AM"]]) und bipartite Layouts ([[Component:InlineIcon type="BP"]]) – mit Fokus auf große Netzwerke und Aufgaben auf Übersichtsebene. Die Studie wurde über Amazon Mechanical Turk (MTurk) durchgeführt, um statistisch signifikante Ergebnisse zu erzielen.`,
         },
       },
       {
@@ -45,81 +45,249 @@ const projects = [
           en: "My Role",
           de: "Meine Rolle",
         },
-        content: {
-          en: `
-  - Designed a between-subjects study, including task structure and layout conditions  
-  - Generated the study stimuli using **R** and **d3.js**  
-  - Built the study platform using **JsPsych**, **PHP**, and **MySQL**  
-  - Recruited and screened 150 participants via MTurk based on demographics, HIT score, and attention checks  
-  - Conducted two rounds of pilot testing to refine task clarity and flow  
-  - Interpreted findings to inform visualization design decisions
-          `,
-          de: `
-  - Konzipierte eine Between-Subjects-Studie mit Aufgabenstruktur und Layoutbedingungen  
-  - Erstellte die Stimuli mit **R** und **d3.js**  
-  - Entwickelte die Studienplattform mit **JsPsych**, **PHP** und **MySQL**  
-  - Rekrutierte und filterte 150 MTurk-Teilnehmer basierend auf Demografie, HIT-Score und Aufmerksamkeitschecks  
-  - Führte zwei Pilotphasen durch, um Aufgabenverständnis und Ablauf zu optimieren  
-  - Interpretierte die Ergebnisse zur Ableitung von Visualisierungsentscheidungen
-          `,
+        mediaComponentId: "DetailBoard",
+        layout:"accordion",
+        mediaCaption: {
+          en: "Click on each item to learn more about your contributions.",
+          de: "Klicken Sie auf einen Eintrag, um mehr über Ihren Beitrag zu erfahren.",
         },
-      },
+        content: {
+          en: [
+            {
+              id: "research",
+              title: "Research",
+              subtitle: "Study design & planning",
+              icon: "flask",
+              detail: "- Designed a between-subjects study, including task structure and layout conditions.",
+            },
+            {
+              id: "development",
+              title: "Development",
+              subtitle: "Stimuli generation & platform setup",
+              icon: "code",
+              detail: "- Generated the study stimuli using **R** and **d3.js**  \n- Built the study platform using **JsPsych**, **PHP**, and **MySQL**",
+            },
+            {
+              id: "execution",
+              title: "Execution",
+              subtitle: "Participant recruitment & data collection",
+              icon: "users",
+              detail: "- Recruited and screened 150 participants via MTurk based on demographics, HIT score, and attention checks  \n- Conducted two rounds of pilot testing to refine task clarity and flow",
+            },
+            {
+              id: "analysis",
+              title: "Analysis",
+              subtitle: "Insight extraction",
+              icon: "brain",
+              detail: "- Interpreted findings to inform visualization design decisions.",
+            }
+          ],
+          de: [
+            {
+              id: "research",
+              title: "Forschung",
+              subtitle: "Studienaufbau & Planung",
+              icon: "flask",
+              detail: "- Konzipierte eine Between-Subjects-Studie mit Aufgabenstruktur und Layoutbedingungen.",
+            },
+            {
+              id: "development",
+              title: "Entwicklung",
+              subtitle: "Stimulierungs- und Plattformaufbau",
+              icon: "code",
+              detail: "- Erstellte die Stimuli mit **R** und **d3.js**  \n- Entwickelte die Studienplattform mit **JsPsych**, **PHP** und **MySQL**",
+            },
+            {
+              id: "execution",
+              title: "Durchführung",
+              subtitle: "Rekrutierung & Datenerhebung",
+              icon: "users",
+              detail: "- Rekrutierte und filterte 150 MTurk-Teilnehmer basierend auf Demografie, HIT-Score und Aufmerksamkeitschecks  \n- Führte zwei Pilotphasen durch, um Aufgabenverständnis und Ablauf zu optimieren",
+            },
+            {
+              id: "analysis",
+              title: "Analyse",
+              subtitle: "Erkenntnisgewinnung",
+              icon: "brain",
+              detail: "- Interpretierte die Ergebnisse zur Ableitung von Visualisierungsentscheidungen.",
+            }
+          ]
+        }
+      },      
       {
         title: {
           en: "Study Details",
           de: "Studienaufbau",
         },
-        content: {
-          en: `
-  - **Participants:** 150 MTurk users, screened for quality  
-  - **Design:** Randomized assignment to one of three layout types across five network tasks  
-  - **Tasks Included:** Density estimation, cluster detection, structural overview  
-  - **Metrics Recorded:** Accuracy, response time, and perceived difficulty
-          `,
-          de: `
-  - **Teilnehmer:** 150 MTurk-Nutzer, auf Qualität geprüft  
-  - **Studiendesign:** Zufällige Zuteilung zu einem von drei Layouttypen über fünf Netzwerkaufgaben  
-  - **Aufgaben:** Dichteschätzung, Clustererkennung, strukturelle Übersicht  
-  - **Messgrößen:** Genauigkeit, Reaktionszeit, wahrgenommene Schwierigkeit
-          `,
+        mediaComponentId: "DetailBoard",
+        layout: "bubble",
+        mediaCaption: {
+          en: "Click to explore the study's structure, parameters, tasks, and measures.",
+          de: "Klicken Sie, um Aufbau, Parameter, Aufgaben und Messgrößen der Studie zu erkunden.",
         },
+        content: {
+          en: [
+            {
+              id: "design",
+              icon: "users",
+              title: "Study Design",
+              detail: `
+- Between-subject design with three layout conditions: [[Component:InlineIcon type="NL"]], [[Component:InlineIcon type="AM"]], and [[Component:InlineIcon type="BP"]]  
+- 150 participants recruited via Amazon Mechanical Turk (MTurk), 50 per layout  
+- HIT approval rate ≥ 97% and at least 1,000 completed HITs required  
+- Attention-check trials included throughout the study
+`,
+            },
+            {
+              id: "parameters",
+              icon: "sliders-h",
+              title: "Parameters",
+              detail: `We varied [[Component:InlineReveal label="network size" content="The number of nodes in the network."]], [[Component:InlineReveal label="network density" content="The number of edges relative to the number of nodes."]], and [[Component:InlineReveal label="network class" content="This parameter captures different structural properties commonly found in real-world networks. Four classes were used: small-world networks, scale-free networks, community structure, and random networks."]] to simulate different network configurations.`,
+            },
+            {
+              id: "tasks",
+              icon: "tasks",
+              title: "Tasks",
+              detail: `Tasks included [[Component:InlineReveal label="Class Identification" content="Participants were shown one network and asked which class it belonged to, selecting from reference images of four known network classes. This task tested how well visual characteristics of each class were preserved."]], [[Component:InlineReveal label="Cluster Detection" content="Participants were shown a single network and asked how many clusters they could detect. This assessed the representation ability to reveal cluster structure under different densities."]], and [[Component:InlineReveal label="Density Estimation" content="Participants were shown two networks from the same class side by side and asked: “Which network has more connections?” This tested how sensitive they were to differences in network density."]]`,
+            },
+            {
+              id: "measures",
+              icon: "clipboard-check",
+              title: "Measures",
+              detail: `We collected accuracy, completion time, and [[Component:InlineReveal label="user feedback" content="Participants were asked to rate the difficulty of the task on a 5-point Likert scale and to describe the strategy they followed to solve the task."]] for analysis.`,
+            },
+          ],
+          de: [
+            {
+              id: "design",
+              icon: "users",
+              title: "Studiendesign",
+              detail: `
+- Between-Subjects-Design mit drei Layout-Bedingungen: [[Component:InlineIcon type="NL"]], [[Component:InlineIcon type="AM"]] und [[Component:InlineIcon type="BP"]]  
+- 150 Teilnehmende rekrutiert über Amazon Mechanical Turk (MTurk), 50 pro Bedingung  
+- HIT-Zulassungsrate ≥ 97 % und mindestens 1.000 abgeschlossene HITs erforderlich  
+- Aufmerksamkeitstests waren über die Studie verteilt eingebettet
+`,
+            },
+            {
+              id: "parameters",
+              icon: "sliders-h",
+              title: "Parameter",
+              detail: `Wir haben [[Component:InlineReveal label="Netzwerkgröße" content="Die Anzahl der Knoten im Netzwerk."]], [[Component:InlineReveal label="Netzwerkdichte" content="Das Verhältnis von Kanten zu Knoten im Netzwerk."]], und [[Component:InlineReveal label="Netzwerkklasse" content="Dieser Parameter beschreibt strukturelle Eigenschaften, wie sie in realen Netzwerken häufig vorkommen. Es wurden vier Klassen verwendet: Small-World-Netzwerke, Scale-Free-Netzwerke, Community-Strukturen und Zufallsnetzwerke."]] variiert, um unterschiedliche Netzwerkk`,
+            },
+            {
+              id: "tasks",
+              icon: "tasks",
+              title: "Aufgaben",
+              detail: `Die Aufgaben umfassten [[Component:InlineReveal label="Klassifikation" content="Den Teilnehmenden wurde ein Netzwerk gezeigt und sie sollten entscheiden, zu welcher Klasse es gehört. Zur Auswahl standen Referenzbeispiele von vier bekannten Netzwerkklassen. Diese Aufgabe prüfte, wie gut die visuellen Merkmale jeder Klasse erhalten blieben."]], [[Component:InlineReveal label="Clustererkennung" content="Den Teilnehmenden wurde ein einzelnes Netzwerk gezeigt und sie sollten angeben, wie viele Cluster sie erkennen können. Damit wurde getestet, wie gut die Darstellung Clusterstrukturen bei unterschiedlichen Dichten erkennen lässt."]], und [[Component:InlineReveal label="Dichteabschätzung" content="Den Teilnehmenden wurden zwei Netzwerke derselben Klasse nebeneinander gezeigt. Sie sollten entscheiden: „Welches Netzwerk hat mehr Verbindungen?“ So wurde die Sensitivität für Unterschiede in der Netzwerkdichte geprüft."]]`,
+            },
+            {
+              id: "measures",
+              icon: "clipboard-check",
+              title: "Messgrößen",
+              detail: `Es wurden Genauigkeit, Bearbeitungszeit und [[Component:InlineReveal label="Teilnehmendenfeedback" content="Die Teilnehmenden wurden gebeten, die Schwierigkeit der Aufgabe auf einer 5-Punkte-Likert-Skala von „sehr einfach“ bis „sehr schwierig“ zu bewerten und die Strategie zu beschreiben, mit der sie die Aufgabe gelöst haben."]] zur Analyse erfasst.`,
+            },
+          ]
+        }
       },
       {
         title: {
           en: "Key Insights",
           de: "Zentrale Erkenntnisse",
         },
-        content: {
-          en: `
-  - BP and AM layouts supported better high-level comprehension of network structure, while NL excelled at visualizing clusters  
-  - BP was the weakest layout for density estimation; AM performed best  
-  - For tasks involving node attributes or directionality, AM and BP provided clearer overviews due to their dual-axis structure
-          `,
-          de: `
-  - BP und AM ermöglichten ein besseres Verständnis der Netzwerkstruktur, NL war am besten für Clustererkennung  
-  - BP war am schlechtesten für Dichteschätzungen geeignet; AM war am besten  
-  - Bei Aufgaben mit Knoteneigenschaften oder Richtung waren AM und BP durch ihre zweiachsige Struktur vorteilhaft
-          `,
-        },
-      },
-      {
-        title: {
-          en: "Implications",
-          de: "Implikationen",
+        mediaComponentId: "DetailBoard",
+        layout:"accordion",
+        mediaCaption: {
+          en: "Click on the tasks to explore detailed results with accuracy charts for each task.",
+          de: "Klicke auf die Aufgaben, um detaillierte Ergebnisse mit Genauigkeitsdiagrammen für jede Aufgabe zu sehen.",
         },
         content: {
-          en: `
-  - For understanding overall network structure, layouts based on vertex ordering (AM and BP) performed better than force-directed approaches (NL)  
-  - For density estimation, edge packing (as in AM) provided more accurate results than edge overdrawing (NL and BP)  
-  - For cluster detection, node proximity had more impact than edge visibility — spatial grouping helped users more than clearly drawn connections
-          `,
-          de: `
-  - Für das Gesamtverständnis waren Layouts mit Knotenordnung (AM, BP) effektiver als Kraft-basierte Ansätze (NL)  
-  - Bei Dichteschätzungen war Kantenverdichtung (wie bei AM) präziser als überlagerte Kanten (NL, BP)  
-  - Für Clustererkennung war Knotennähe wichtiger als Kantenzeichnung — räumliche Gruppierung half mehr als deutlich sichtbare Verbindungen
-          `,
-        },
+          en: [
+            {
+              id: "Structural Overview",
+              // icon: "project-diagram",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_BP2.png`,
+              title: "Class Identification",
+              subtitle: `[[Component:InlineIcon type="AM"]] and [[Component:InlineIcon type="BP"]] gave clearer structural overview`,
+              detail: `For understanding overall network structure, layouts based on vertex ordering ([[Component:InlineIcon type="AM"]] and [[Component:InlineIcon type="BP"]]) performed better than force-directed approaches ([[Component:InlineIcon type="NL"]]).
+      [[Component:AccuracyChart task="Structural Overview"]]
+              `,
+            },
+            {
+              id: "Cluster Detection",
+              // icon: "object-group",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_NL2.png`,
+              title: "Cluster Detection",
+              subtitle: `[[Component:InlineIcon type="NL"]] excelled due to the spatial grouping between nodes`,
+              detail: `For cluster detection, node proximity had more impact than edge visibility — spatial grouping helped users more than clearly drawn connections.
+              [[Component:AccuracyChart task="Cluster Detection"]]
+              `,
+            },
+            {
+              id: "Density Estimation",
+              // icon: "chart-bar",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_AM2.png`,
+              title: "Density Estimation",
+              subtitle: `[[Component:InlineIcon type="BP"]] was weakest; [[Component:InlineIcon type="AM"]] gave most accurate results`,
+              detail: `For density estimation, edge packing (as in [[Component:InlineIcon type="AM"]]) provided more accurate results than edge overdrawing ([[Component:InlineIcon type="NL"]] and [[Component:InlineIcon type="BP"]]).  
+      [[Component:AccuracyChart task="Density Estimation"]]
+              `,
+            },
+          ],
+          de: [
+            {
+              id: "Structural Overview",
+              // icon: "project-diagram",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_BP2.png`,
+              title: "Klassifikation",
+              subtitle: `[[Component:InlineIcon type="AM"]] und [[Component:InlineIcon type="BP"]] boten eine klarere strukturelle Übersicht`,
+              detail: `Für das Gesamtverständnis waren Layouts mit Knotenordnung ([[Component:InlineIcon type="AM"]], [[Component:InlineIcon type="BP"]]) effektiver als Kraft-basierte Ansätze ([[Component:InlineIcon type="NL"]]).
+      [[Component:AccuracyChart task="Structural Overview"]]
+              `,
+            },
+            
+            {
+              id: "Cluster Detection",
+              // icon: "object-group",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_NL2.png`,
+              title: "Clustererkennung",
+              subtitle: `[[Component:InlineIcon type="NL"]] war am besten durch räumliche Gruppierung`,
+              detail: `Für Clustererkennung war Knotennähe wichtiger als Kantenzeichnung — räumliche Gruppierung half mehr als deutlich sichtbare Verbindungen.  
+      [[Component:AccuracyChart task="Cluster Detection"]]
+              `,
+            },
+            {
+              id: "Density Estimation",
+              // icon: "chart-bar",
+              // iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_AM2.png`,
+              title: "Dichteabschätzung",
+              subtitle: `[[Component:InlineIcon type="BP"]] war am schwächsten; [[Component:InlineIcon type="AM"]] lieferte die genauesten Ergebnisse`,
+              detail: `Bei Dichteschätzungen war Kantenverdichtung (wie bei [[Component:InlineIcon type="AM"]]) präziser als überlagerte Kanten ([[Component:InlineIcon type="NL"]], [[Component:InlineIcon type="BP"]]).
+      [[Component:AccuracyChart task="Density Estimation"]]
+              `,
+            },
+            
+          ], 
+        }
       },
+  //     {
+  //       title: {
+  //         en: "Implications",
+  //         de: "Implikationen",
+  //       },
+  //       content: {
+  //         en: `
+  // - For understanding overall network structure, layouts based on vertex ordering (AM and BP) performed better than force-directed approaches (NL)  
+  // - For density estimation, edge packing (as in AM) provided more accurate results than edge overdrawing (NL and BP)  
+  // - For cluster detection, node proximity had more impact than edge visibility — spatial grouping helped users more than clearly drawn connections
+  //         `,
+  //         de: `
+  // - Für das Gesamtverständnis waren Layouts mit Knotenordnung (AM, BP) effektiver als Kraft-basierte Ansätze (NL)  
+  // - Bei Dichteschätzungen war Kantenverdichtung (wie bei AM) präziser als überlagerte Kanten (NL, BP)  
+  // - Für Clustererkennung war Knotennähe wichtiger als Kantenzeichnung — räumliche Gruppierung half mehr als deutlich sichtbare Verbindungen
+  //         `,
+  //       },
+  //     },
       {
         title: {
           en: "Reflection",

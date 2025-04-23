@@ -2,7 +2,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState } from "react";
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import ScrollToTop from "./components/utils/ScrollToTop";
+import ScrollToTop from "./utils/ScrollToTop";
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
 // import NotFound from './pages/NotFound';

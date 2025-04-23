@@ -4,7 +4,7 @@
 }
 
 .section-content {
-  display: flex;
+  display: inline-block;
   align-items: flex-start;
   gap: 2rem;
   flex-wrap: wrap;

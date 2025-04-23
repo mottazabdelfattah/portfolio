@@ -10,10 +10,12 @@ import rehypeRaw from "rehype-raw";
 import SectionBlock from "../components/blocks/SectionBlock";
 import MiniNav from "../components/layout/MiniNav";
 import uiText from "../data/uiText";
+import { replaceCustomComponents } from "../utils/markdownComponents";
+import DetailBoard from "../components/visuals/DetailBoard";
 
 function ProjectDetail() {
   const { id } = useParams();
-  const { language } = useLanguage(); 
+  const { language } = useLanguage();
   const text = uiText[language].projectDetails;
   const project = projects.find((p) => p.id === id);
 
@@ -40,13 +42,24 @@ function ProjectDetail() {
               className="detail-image"
             />
           </Zoom>
-          {project.caption && <figcaption>{project.caption[language]}</figcaption>}
+          {project.caption && (
+            <figcaption>{project.caption[language]}</figcaption>
+          )}
         </figure>
       )}
 
       {project.tldr && (
         <div className="tldr-block">
-          <ReactMarkdown rehypePlugins={[rehypeRaw]}>
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              p: ({ children }) => <>{replaceCustomComponents(children)}</>,
+              li: ({ children }) => (
+                <li>{replaceCustomComponents(children)}</li>
+              ),
+              code: ({ node, ...props }) => <span {...props} />,
+            }}
+          >
             {project.tldr[language]}
           </ReactMarkdown>
         </div>
@@ -60,6 +73,26 @@ function ProjectDetail() {
         project.sections.map((sec, idx) => {
           const title = sec.title[language];
           const content = sec.content[language];
+
+          if (sec.mediaComponentId === "DetailBoard") {
+            const layout = sec.layout;
+            // Render DetailBoard directly
+            return (
+              <div
+                id={`section-${idx}`}
+                key={idx}
+                className="section-detail-accordion"
+              >
+                <div className="section-block">
+                  <h3 className="section-title">{title}</h3>
+                  <DetailBoard
+                    content={sec.content[language]}
+                    layout={layout}
+                  />
+                </div>
+              </div>
+            );
+          }
 
           if (title === "Read More" || title === "Mehr erfahren") {
             return (

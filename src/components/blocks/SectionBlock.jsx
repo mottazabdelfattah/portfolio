@@ -5,6 +5,7 @@ import rehypeRaw from "rehype-raw";
 import "./SectionBlock.css"; // Optional: for layout/styling
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { replaceCustomComponents } from "../../utils/markdownComponents";
 
 const SectionBlock = ({
   title,
@@ -40,9 +41,18 @@ const SectionBlock = ({
               )}
             </div>
           )}
-          <div className="section-text-full">
-            <ReactMarkdown>{content}</ReactMarkdown>
-          </div>
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              p: ({ children }) => <>{replaceCustomComponents(children)}</>,
+              li: ({ children }) => (
+                <li>{replaceCustomComponents(children)}</li>
+              ),
+              code: ({ node, ...props }) => <span {...props} />,
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       ) : (
         <div className={`section-content ${isMediaLeft ? "reverse" : ""}`}>
@@ -53,9 +63,18 @@ const SectionBlock = ({
               </Zoom>
             </div>
           )}
-          <div className="section-text">
-            <ReactMarkdown rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
-          </div>
+          <ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              p: ({ children }) => <>{replaceCustomComponents(children)}</>,
+              li: ({ children }) => (
+                <li>{replaceCustomComponents(children)}</li>
+              ),
+              code: ({ node, ...props }) => <span {...props} />,
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       )}
     </motion.section>
