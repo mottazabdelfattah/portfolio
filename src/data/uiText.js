@@ -143,6 +143,9 @@ const uiText = {
       caption:
         "The width of the bars represents the means, and the error bars their 95% confidence intervals.",
     },
+    footer:{
+      text: 'Built with React — occasionally against ChatGPT’s better judgment.'
+    }
   },
   de: {
     home: {
@@ -288,6 +291,9 @@ const uiText = {
       caption:
         "Die Breite der Balken zeigt den Mittelwert, die Fehlerbalken die 95% Konfidenzintervalle.",
     },
+    footer:{
+      text: 'Erstellt mit React – manchmal gegen ChatGPTs Rat.'
+    }
   },
 };
 
