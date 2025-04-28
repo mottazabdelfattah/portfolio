@@ -10,6 +10,9 @@ function ProjectCard({ project, onClick }) {
       className={`card ${project.type.join(" ")}`}
       onClick={onClick}
     >
+      {project.image && (
+        <img src={project.image} alt={project.title[language]} className="card-thumbnail" />
+      )}
       <h3>{project.title[language]}</h3>
       <p>{project.summary[language]}</p>
     </Link>

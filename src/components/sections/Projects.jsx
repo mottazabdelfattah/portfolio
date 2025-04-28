@@ -9,9 +9,9 @@ function Projects({ setActiveSection }) {
   const [filter, setFilter] = useState("all");
   const { language } = useLanguage();
   const text = uiText[language].projectsSection;
-  const filteredProjects = projects.filter(
-    (project) => filter === "all" || project.type.includes(filter)
-  );
+  const filteredProjects = projects
+    .filter((project) => filter === "all" || project.type.includes(filter))
+    .sort((a, b) => a.title[language].localeCompare(b.title[language]));
 
   return (
     <div id="projects">

@@ -2,12 +2,14 @@ import React, { Children, Fragment } from "react";
 import InlineReveal from "../components/visuals/InlineReveal";
 import AccuracyChart from "../components/visuals/AccuracyChart";
 import InlineIcon from "../components/visuals/InlineIcon";
+import ZoomImage from "../components/visuals/ZoomImage";
 
 // Component map
 export const componentMap = {
   InlineReveal: (props) => <InlineReveal {...props} />,
   AccuracyChart: (props) => <AccuracyChart {...props} />,
   InlineIcon: (props) => <InlineIcon {...props} />,
+  ZoomImage: (props) => <ZoomImage {...props} />,
 };
 
 // Replacement function
@@ -32,10 +34,7 @@ export function replaceCustomComponents(children) {
           const Component = componentMap[tag];
           if (Component) {
             return (
-              <Component
-                key={`comp-${outerIdx}-${innerIdx}`}
-                {...props}
-              />
+              <Component key={`comp-${outerIdx}-${innerIdx}`} {...props} />
             );
           }
         }

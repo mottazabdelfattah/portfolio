@@ -43,7 +43,18 @@ function ProjectDetail() {
             />
           </Zoom>
           {project.caption && (
-            <figcaption>{project.caption[language]}</figcaption>
+            <figcaption><ReactMarkdown
+            rehypePlugins={[rehypeRaw]}
+            components={{
+              p: ({ children }) => <>{replaceCustomComponents(children)}</>,
+              li: ({ children }) => (
+                <li>{replaceCustomComponents(children)}</li>
+              ),
+              code: ({ node, ...props }) => <span {...props} />,
+            }}
+          >
+            {project.caption[language]}
+          </ReactMarkdown></figcaption>
           )}
         </figure>
       )}

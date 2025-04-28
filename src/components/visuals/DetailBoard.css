@@ -294,7 +294,7 @@
   }
   
   .accordion-item.active .accordion-content-wrapper {
-    max-height: 400px; /* Adjust based on your content */
+    max-height: none; 
     opacity: 1;
   }
   
