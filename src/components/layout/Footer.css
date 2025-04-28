@@ -21,3 +21,9 @@
     margin: 0 auto;
     
   }
+
+  @media (max-width: 600px) {
+    .footer {
+      font-size: 0.75rem;
+    }
+  }
