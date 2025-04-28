@@ -4,7 +4,7 @@
     background-color: #f8f8f8;
     text-align: center;
     font-size: 0.85rem;
-    color: #555;
+    color: #666;
     border-top: 1px solid #ddd;
   }
   
@@ -16,4 +16,8 @@
   .footer-content a:hover {
     text-decoration: underline;
   }
-  
+  .footer-content p {
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }

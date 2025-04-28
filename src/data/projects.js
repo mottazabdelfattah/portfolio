@@ -214,6 +214,7 @@ const projects = [
             {
               id: "Structural Overview",
               title: "Class Identification",
+              iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_bp_vertex_ordering.svg`,
               subtitle: `[[Component:InlineIcon type="AM"]] and [[Component:InlineIcon type="BP"]] gave clearer structural overview`,
               detail: `For understanding overall network structure, layouts based on vertex ordering ([[Component:InlineIcon type="AM"]] and [[Component:InlineIcon type="BP"]]) performed better than force-directed approaches ([[Component:InlineIcon type="NL"]]).
       [[Component:AccuracyChart task="Structural Overview"]]
@@ -222,6 +223,7 @@ const projects = [
             {
               id: "Cluster Detection",
               title: "Cluster Detection",
+              iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_nl_cluster_enc.svg`,
               subtitle: `[[Component:InlineIcon type="NL"]] excelled due to the spatial grouping between nodes`,
               detail: `For cluster detection, node proximity had more impact than edge visibility — spatial grouping helped users more than clearly drawn connections.
               [[Component:AccuracyChart task="Cluster Detection"]]
@@ -230,6 +232,7 @@ const projects = [
             {
               id: "Density Estimation",
               title: "Density Estimation",
+              iconUrl: `${import.meta.env.BASE_URL}/assets/icons/symbol_am_density_enc.svg`,
               subtitle: `[[Component:InlineIcon type="BP"]] was weakest; [[Component:InlineIcon type="AM"]] gave most accurate results`,
               detail: `For density estimation, edge packing (as in [[Component:InlineIcon type="AM"]]) provided more accurate results than edge overdrawing ([[Component:InlineIcon type="NL"]] and [[Component:InlineIcon type="BP"]]).  
       [[Component:AccuracyChart task="Density Estimation"]]
@@ -765,17 +768,6 @@ Skalierbarkeit wird in der Visualisierungsforschung sehr unterschiedlich definie
         },
       },
       
-//       {
-//         title: { en: "Reflection", de: "Reflexion" },
-//         content: {
-//           en: `
-// This project sharpened my skills in **thematic coding**. It also reminded me how important it is to be precise and evidence-based when making claims about concepts like scalability, both in research and product contexts.
-//         `,
-//           de: `
-// Das Projekt schärfte meine Fähigkeiten in der **thematischen Codierung**. Es erinnerte mich auch daran, wie wichtig es ist, bei Aussagen zu Konzepten wie Skalierbarkeit präzise und evidenzbasiert zu sein — sowohl in der Forschung als auch in der Produktentwicklung.
-//         `,
-//         },
-//       },
       {
         title: { en: "Read More", de: "Mehr erfahren" },
         content: {
@@ -973,17 +965,6 @@ Skalierbarkeit wird in der Visualisierungsforschung sehr unterschiedlich definie
           `,
         },
       },
-  //     {
-  //       title: { en: "Reflection", de: "Reflexion" },
-  //       content: {
-  //         en: `
-  // This was my first hands-on experience conducting a creativity-focused research workshop. It gave me a deeper understanding of how to structure open-ended, participatory sessions and how letting participants lead the conversation and resisting the urge to steer the discussion are essential for uncovering authentic insights.
-  //         `,
-  //         de: `
-  // Dies war meine erste praktische Erfahrung mit einem kreativitätsorientierten Forschungsworkshop. Ich lernte, wie man offene, partizipative Sitzungen sinnvoll strukturiert — und wie wichtig es ist, die Diskussion nicht zu lenken, sondern den Teilnehmenden Raum für echte Einsichten zu geben.
-  //         `,
-  //       },
-  //     },
       {
         title: { en: "Read More", de: "Mehr erfahren" },
         content: {
@@ -1860,112 +1841,6 @@ Das Tool ermöglicht es Designer:innen, Korrelationen zwischen Parametern zu erk
       },
     ]
   },  
-  // {
-  //   id: "vis-future-aec",
-  //   type: ["aec"],
-  //   title: {
-  //     en: "Visualization for the Future of AEC",
-  //     de: "Visualisierung für die Zukunft der AEC-Branche",
-  //   },
-  //   summary: {
-  //     en: "A perspective article on visualization's role in shaping AEC’s future.",
-  //     de: "Ein Perspektivartikel über die Rolle der Visualisierung in der Zukunft von Architektur, Ingenieurwesen und Bauwesen (AEC).",
-  //   },
-  //   tldr: {
-  //     en: `
-  // > **TL;DR**  
-  // > Co-authored a perspective article on how visualization and AR technologies can support the digital transformation of the architecture, engineering, and construction (AEC) industry. The piece outlines domain challenges and identifies visualization opportunities across design, fabrication, and construction workflows.
-  //     `,
-  //     de: `
-  // > **Kurzfassung**  
-  // > Mitverfasser eines Perspektivartikels über das Potenzial von Visualisierungs- und AR-Technologien für die digitale Transformation der AEC-Branche. Der Artikel beschreibt branchenspezifische Herausforderungen und identifiziert Einsatzmöglichkeiten für Visualisierung in Entwurf, Fertigung und Bauausführung.
-  //     `,
-  //   },
-  //   sections: [
-  //     {
-  //       title: { en: "Summary", de: "Zusammenfassung" },
-  //       content: {
-  //         en: `
-  // This article explores the unique challenges of the AEC industry and outlines the potential for **visualization research** to play a transformative role in its digital future. Drawing on long-term interdisciplinary collaboration, the article characterizes the AEC ecosystem, its complexity, and the need for **human-in-the-loop visual tools** that support decision-making across design, fabrication, and construction phases.
-  //         `,
-  //         de: `
-  // Dieser Artikel beleuchtet die spezifischen Herausforderungen der AEC-Branche und zeigt auf, wie **Visualisierungsforschung** eine transformative Rolle in ihrer digitalen Zukunft spielen kann. Basierend auf langjähriger interdisziplinärer Zusammenarbeit beschreibt der Artikel das komplexe AEC-Ökosystem und betont den Bedarf an **human-in-the-loop** Visualisierungstools, die Entscheidungen in Entwurf, Fertigung und Bau unterstützen.
-  //         `,
-  //       },
-  //     },
-  //     {
-  //       title: { en: "My Role", de: "Meine Rolle" },
-  //       content: {
-  //         en: `
-  // - Contributed to the conceptual framing and writing of the article  
-  // - Helped articulate domain challenges and translate them into visualization research opportunities  
-  // - Synthesized examples from collaborative projects involving architectural design optimization
-  //         `,
-  //         de: `
-  // - Mitwirkung an der konzeptionellen Ausrichtung und am Schreiben des Artikels  
-  // - Formulierung branchenspezifischer Herausforderungen und Übertragung in Forschungsfragen zur Visualisierung  
-  // - Zusammenstellung von Beispielen aus Kooperationsprojekten zur architektonischen Designoptimierung
-  //         `,
-  //       },
-  //     },
-  //     {
-  //       title: { en: "Article Highlights", de: "Kernaussagen" },
-  //       content: {
-  //         en: `
-  // - Discusses critical AEC characteristics and why it lags behind in automation compared to other sectors such as manufacturing or agriculture  
-  // - Highlights key AEC solution strategies, including **robotic fabrication**, **design generation and optimization**, **adaptive structures**, and **sustainable materials**  
-  // - Identifies areas where visualization can offer value, such as **AR for human-robot collaboration**, **visual analytics for design space exploration**, and **situated visualization for adaptive structures**
-  //         `,
-  //         de: `
-  // - Diskussion zentraler Merkmale der AEC-Branche und Gründe, warum sie in Sachen Automatisierung anderen Bereichen wie Fertigung oder Landwirtschaft hinterherhinkt  
-  // - Darstellung von Lösungsansätzen: **robotergestützte Fertigung**, **generatives Design**, **adaptive Strukturen**, **nachhaltige Materialien**  
-  // - Identifikation von Einsatzmöglichkeiten für Visualisierung, etwa **AR für Mensch-Roboter-Kollaboration**, **Visual Analytics für Designspace-Exploration**, **situative Visualisierung für adaptive Strukturen**
-  //         `,
-  //       },
-  //     },
-  //     {
-  //       title: { en: "Key Takeaway", de: "Zentrale Erkenntnis" },
-  //       content: {
-  //         en: `
-  // The article advocates for **human-in-the-loop** solutions that reflect the contextual and cognitive needs of AEC professionals — and suggests that no community is better positioned to tackle these challenges than the visualization and visual analytics community.
-  //         `,
-  //         de: `
-  // Der Artikel spricht sich für **human-in-the-loop**-Lösungen aus, die den kontextuellen und kognitiven Anforderungen von AEC-Fachleuten gerecht werden – und betont, dass die Visualisierungs-Community besonders gut aufgestellt ist, diese Herausforderungen anzugehen.
-  //         `,
-  //       },
-  //     },
-  //     {
-  //       title: { en: "Reflection", de: "Reflexion" },
-  //       content: {
-  //         en: `
-  // Writing this article helped me step back from individual research projects and think more broadly about how design, engineering, and digital technologies intersect at a systems level. It also allowed me to reflect on the interplay between the **visualization** and **AEC** domains—and what these two design-driven disciplines can learn from one another.
-  //         `,
-  //         de: `
-  // Das Schreiben dieses Artikels ermöglichte mir, Abstand von einzelnen Forschungsprojekten zu gewinnen und systemischer über die Schnittstellen von Design, Technik und digitalen Technologien nachzudenken. Es war auch eine Gelegenheit, das Zusammenspiel von **Visualisierung** und **AEC** zu reflektieren – und darüber, was beide gestaltungsorientierten Disziplinen voneinander lernen können.
-  //         `,
-  //       },
-  //     },
-  //     {
-  //       title: { en: "Read More", de: "Mehr erfahren" },
-  //       content: {
-  //         en: `
-  // <p class="project-actions">
-  //   <a href="https://ieeexplore.ieee.org/abstract/document/9709159" target="_blank" class="contact-button">
-  //     📄 Read Full Article
-  //   </a>
-  // </p>
-  //         `,
-  //         de: `
-  // <p class="project-actions">
-  //   <a href="https://ieeexplore.ieee.org/abstract/document/9709159" target="_blank" class="contact-button">
-  //     📄 Zum Artikel
-  //   </a>
-  // </p>
-  //         `,
-  //       },
-  //     },
-  //   ],
-  // },
 ];
 
 export default projects;
