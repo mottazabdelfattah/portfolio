@@ -8,7 +8,6 @@ function Contact() {
   const { language } = useLanguage();
   const text = uiText[language].contactSection;
   useEffect(() => {
-    
     const user = "mottazabdelfattah";
     const domain = "gmail.com";
     const element = document.getElementById("email");
@@ -27,7 +26,11 @@ function Contact() {
 
       <div className="contact-buttons">
         <a
-          href="./assets/docs/abdelaal_resume.pdf"
+          href={
+            language === "de"
+              ? "./assets/docs/abdelaal_lebenslauf.pdf"
+              : "./assets/docs/abdelaal_resume.pdf"
+          }
           target="_blank"
           rel="noopener noreferrer"
           className="contact-button"
