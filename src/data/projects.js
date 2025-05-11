@@ -1420,8 +1420,8 @@ Skalierbarkeit wird in der Visualisierungsforschung sehr unterschiedlich definie
       de: "Fitness Landscape Explorer",
     },
     summary: {
-      en: "An interactive tool for exploring architectural design optimization through visualized fitness landscapes.",
-      de: "Ein interaktives Tool zur Analyse architektonischer Designoptimierung über visualisierte Fitness-Landschaften.",
+      en: "An interactive tool for exploring architectural design optimization.",
+      de: "Ein interaktives Tool zur Analyse architektonischer Designoptimierung.",
     },
     tldr: {
       en: `
@@ -1668,8 +1668,8 @@ Das Tool ermöglicht es Designer:innen, Korrelationen zwischen Parametern zu erk
       de: "Fiber Structure Design Explorer"
     },
     summary: {
-      en: "An interactive dashboard to explore fiber structure design spaces at multiple levels of detail.",
-      de: "Ein interaktives Dashboard zur Erkundung von Faserstruktur-Designräumen auf mehreren Detailebenen."
+      en: "An interactive dashboard to explore fiber structure design spaces.",
+      de: "Ein interaktives Dashboard zur Erkundung von Faserstruktur-Designräumen."
     },
     tldr: {
       en: `
